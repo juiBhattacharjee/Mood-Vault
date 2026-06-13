@@ -1,0 +1,15 @@
+{
+  "name": "mood-vault-monorepo",
+  "version": "1.0.0",
+  "description": "Unified Mood Vault Portfolio MERN Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
